@@ -16,7 +16,7 @@ wait(4000);
 call("trainableSegmentation.Weka_Segmentation.loadData", "/insert file path to data");
 wait(4000);
 //training classifier and creating result
-call("trainableSegmentation.Weka_Segmentation.trainClassifier");
+call("trainableSegmentation.Weka_Segmentation.applyClassifier");
 call("trainableSegmentation.Weka_Segmentation.getResult");
 wait(10000);
 selectImage("Classified image");
